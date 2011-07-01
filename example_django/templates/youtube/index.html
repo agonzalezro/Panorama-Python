@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>{{ details.title }}</title>
+</head>
+<body>
+<h1>{{ details.title }}</h1>
+<p>{{ details.embed_html|safe }}</p>
+<h2>Tags:</h2>
+<ul>
+{% for tag in details.tags %}
+<li>{{ tag }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>

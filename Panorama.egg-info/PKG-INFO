@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Panorama
+Version: 0.1dev
+Summary: Wrapper class to manage video services in a standarized way. It is an easy way to obtain a few basics about a video only through its url.
+Home-page: http://github.com/agonzalezro/Panorama-Python
+Author: Álex González
+Author-email: agonzalezro@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: panorama python video wrapper vimeo youtube
+Platform: UNKNOWN
