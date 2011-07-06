@@ -1,6 +1,6 @@
-from panorama.wrappers import Video
-
 import gdata.youtube.service
+
+from panorama.wrappers import Video
 
 
 class Youtube(Video):
@@ -41,7 +41,7 @@ class Youtube(Video):
         return self.description
 
     def get_thumbnails(self):
-        if not hasattr(self, "thumbnail"):
+        if not hasattr(self, "thumbnails"):
             self.thumbnails = []
             for thumbnail in self.get_video_entry().media.thumbnail:
                 self.thumbnails.append(thumbnail.url)
@@ -69,7 +69,7 @@ class Youtube(Video):
         function get_embed_url()
         """
         if not hasattr(self, "embed_url"):
-            self.embed_url = self.get_video_entry().GetSwfUrl()
+            self.embed_url = self.get_embed_url()
         return self.embed_url
 
     def get_embed_url(self):
